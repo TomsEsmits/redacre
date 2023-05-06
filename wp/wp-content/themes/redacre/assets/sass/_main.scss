@@ -1,0 +1,45 @@
+body {
+  font-display: swap;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: $dongle;
+}
+
+#main {
+  &.menu-open {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: $grid;
+  padding: 0 $gutter;
+  margin: auto;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.admin-bar {
+  .site-header__navbar.active {
+    top: 134px;
+    height: calc(100% + 15px);
+  }
+}

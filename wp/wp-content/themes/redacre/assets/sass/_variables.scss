@@ -1,0 +1,30 @@
+// Theme colors
+$white: #fff;
+$black: #000;
+$header-color: #251f6e;
+$text-color: #848484;
+$list-color: #797979;
+$gray: #474747;
+$purple: #8a94f7;
+$purple2: #6371f4;
+
+// Grid
+$grid: 1536px;
+$gutter: 16px;
+
+// Fonts
+$dongle: "Dongle", sans-serif;
+
+// Font weights
+$bold: 700;
+$medium: 600;
+$default: 400;
+
+// Breakpoints
+$grid-breakpoints: (
+  xs: 450px,
+  sm: 576px,
+  md: 768px,
+  lg: 991px,
+  xl: 1200px,
+) !default;

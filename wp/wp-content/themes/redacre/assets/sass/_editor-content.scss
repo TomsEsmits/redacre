@@ -1,0 +1,58 @@
+.editor-content {
+  p {
+    font-weight: $bold;
+    color: $text-color;
+    margin-bottom: 28px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 32px;
+      line-height: 36px;
+    }
+  }
+
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 1.44em;
+
+    li {
+      font-weight: 400;
+      line-height: 60.8%;
+      color: $list-color;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 24px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        font-size: 32px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+
+      &:before {
+        content: "";
+        max-width: 15px;
+        width: 100%;
+        height: 15px;
+        display: block;
+        background: $purple2;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,120 @@
+.tools {
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 68px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding-bottom: 130px;
+  }
+
+  &__title {
+    font-weight: $bold;
+    text-align: center;
+    color: $header-color;
+    max-width: 630px;
+    margin: auto;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 42px;
+      line-height: 100%;
+      margin-bottom: 24px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 96px;
+      line-height: 60.8%;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__text {
+    font-weight: $medium;
+    text-align: center;
+    color: $text-color;
+    margin: auto;
+    max-width: 758px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 24px;
+      line-height: 24px;
+      margin-bottom: 24px;
+      font-family: $dongle;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 27px;
+      line-height: 27px;
+      margin-bottom: 80px;
+      font-family: $dongle;
+    }
+  }
+
+  &__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__slide-image {
+    margin: 0;
+    margin-bottom: 24px;
+
+    @include media-breakpoint-down(sm) {
+      svg {
+        width: 129px;
+        height: 105px;
+      }
+    }
+  }
+
+  &__slide-title {
+    font-weight: $bold;
+    line-height: 60.8%;
+    color: $header-color;
+    margin-bottom: 24px;
+    text-align: center;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 32px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 46px;
+    }
+  }
+
+  &__slide-text {
+    font-family: $dongle;
+    font-weight: $default;
+    color: $gray;
+    text-align: center;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 21px;
+      line-height: 21px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 25px;
+      line-height: 23px;
+    }
+  }
+
+  .glide__slide {
+    border: 4px solid transparent;
+
+    @include media-breakpoint-down(lg) {
+      padding: 24px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      padding: 35px 33px;
+    }
+
+    &--active {
+      border: 4px solid $purple2;
+      border-radius: 24px;
+    }
+  }
+}

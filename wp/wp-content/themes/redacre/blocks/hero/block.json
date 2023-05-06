@@ -1,0 +1,19 @@
+{
+  "name": "acf/hero",
+  "title": "Hero",
+  "category": "design",
+  "icon": "embed-photo",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "hero.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "redacreScripts": false
+}

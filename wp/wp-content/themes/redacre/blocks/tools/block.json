@@ -1,0 +1,21 @@
+{
+  "name": "acf/tools",
+  "title": "Tools",
+  "category": "widgets",
+  "icon": "plugins-checked",
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "tools.php"
+  },
+  "example": {
+    "attributes": {
+      "mode": "preview",
+      "data": {
+        "preview_image_help": "screenshot.png"
+      }
+    }
+  },
+  "redacreScripts": true,
+  "redacreVendorScripts": ["glide.min.js"],
+  "redacreVendorStyles": ["glide.core.min.css"]
+}

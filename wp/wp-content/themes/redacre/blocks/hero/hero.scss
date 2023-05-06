@@ -1,0 +1,94 @@
+.hero {
+  .container {
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+  }
+
+  @include media-breakpoint-down(lg) {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__inner-container {
+    @include media-breakpoint-up(lg) {
+      display: flex;
+      background: url("../../assets/img/hero.svg");
+      padding-top: 229px;
+      padding-bottom: 323px;
+      background-repeat: no-repeat;
+      background-position-y: 30px;
+      background-position-x: right;
+    }
+  }
+
+  &__content-column {
+    max-width: 491px;
+    width: 100%;
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+      background: $white;
+      border-radius: 20px;
+      padding: 10px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin: auto;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 16px;
+    }
+  }
+
+  &__title {
+    font-weight: $bold;
+    color: $header-color;
+    margin: 0;
+    margin-bottom: 28px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 42px;
+      line-height: 42px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 64px;
+      line-height: 80%;
+    }
+  }
+
+  &__image-column {
+    @include media-breakpoint-down(lg) {
+      height: 425px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+
+  &__image {
+    margin: 0;
+
+    @include media-breakpoint-down(lg) {
+      width: 550px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      position: absolute;
+      bottom: 0;
+    }
+
+    @include media-breakpoint-down(xs) {
+      right: -66px;
+    }
+
+    svg {
+      width: 100%;
+    }
+  }
+}
