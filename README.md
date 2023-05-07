@@ -20,7 +20,10 @@ Pull all files (wp and db folder)
 Set up files into your project folder  
 Import database  
 Copy Advanced Custom Fields Pro plugin into plugins folder  
-Log in admin dashboard  
+Log in admin dashboard
+Admin Credetials:
+Username: redacre_admin
+Password: redacre_admin  
 Activate ACF PRO plugin  
 In terminal run --> npm install  
 Then run comman npm run run:build
